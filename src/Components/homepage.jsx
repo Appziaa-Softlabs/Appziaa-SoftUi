@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './homepage.scss';
-import { Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { Container, Row, InputGroup, FormControl, Button, Navbar, Nav, Form } from 'react-bootstrap';
 class HomePage extends Component {
     constructor() {
         super()
@@ -65,19 +65,58 @@ class HomePage extends Component {
     render() {
 
         return (
-            <div className='homepage'>
-                <h1>Please Provide your loaction to search shop , Produts near You</h1>
-                <Container fluid="md">
+            <div>
+                {/* <Container fluid="md"> */}
+                <div className="header">
+                    <Navbar bg="dark" variant="dark">
+                        <div className="col-md-12 col-sm-12 col-xs-12">
+                            <div className="col-md-4 col-sm-4 col-xs-12">
 
-                    <Row>
+                            </div>
+                            <ul className="stick_menu">
+                                <li><i className="fa mail_icon" aria-hidden="true"><img src="images/phone_icon.png" alt="" />
+                                </i>Call
+                                us <a href="tel:011- 23546413">
+                                        011- 23546413</a></li>
+                                <li><i className="fa fa-envelope mail_icon" >
+                                    {/* <img src="images/phone_icon.png" alt="" /> */}
+                                </i> Email us <a
+                                    href="mailto:info@direct2lab.com">info@direct2lab.com</a></li>
+                            </ul>
+                        </div>
+
+                    </Navbar>
+                </div>
+                <div className="bg_bennar">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12 col-sm-12 col-xs-12">
+                                <div className="heading_h1">
+                                    <h1>Please Provide your loaction to search shop , Produts near You</h1>
+
+                                </div>
+                                <div className="col-md-3 formgroup">
+                                    <Form.Group className="formgroup">
+                                        <Form.Control type="text" placeholder="Enter your Pincode here" />
+                                    </Form.Group>
+                                    <p>or</p>
+                                    <Button className="Icon" onClick={this.getLocation} variant="danger"> Fetch current location
+                                      <i class="fas fa-location"></i></Button>
+                                    {/* <p>latitude : {this.state.latitude}</p>
+                                    <p> longitude:{this.state.longitude}</p> */}
+                                    <p>Address:{this.state.userAddress}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <Row>
                         <div className="inpugroup">
                             <InputGroup className="mb-3">
                                 <FormControl
                                     placeholder="Enter Your Pincode"
-                                    // aria-label="Username"
                                     aria-describedby="basic-addon1"
                                 />
-
                             </InputGroup>
                             <div style={{ fontSize: 30 }} >
                                 <p >or</p>
@@ -87,15 +126,10 @@ class HomePage extends Component {
 
                             {/* <p>latitude : {this.state.latitude}</p>
                             <p> longitude:{this.state.longitude}</p> */}
-                            <p>Address:{this.state.userAddress}</p>
-                        </div>
-                        {/* <div>
-                            <button onClick={this.getLocation}></button>
-                            <p>latitude:{this.state.latitude}</p>
-                            <p>longitude:{this.state.langitude}</p>
-                        </div> */}
-                    </Row>
-                </Container >
+                {/* <p>Address:{this.state.userAddress}</p> */}
+                {/* </div> */}
+                {/* </Row> */}
+                {/* </Container > */}
             </div >
         );
     }
