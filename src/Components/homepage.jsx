@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './homepage.scss';
 import { Container, Row, InputGroup, FormControl, Button, Navbar, Nav, Form } from 'react-bootstrap';
+// import { withRouter } from 'react-router-dom';
+import history from '../history';
 class HomePage extends Component {
     constructor() {
         super()
@@ -8,11 +10,30 @@ class HomePage extends Component {
             latitude: null,
             longitude: null,
             userAddress: '',
+            pincode: '',
+            filteredData: '',
         }
         this.getLocation = this.getLocation.bind(this);
         this.getCoordinate = this.getCoordinate.bind(this);
         this.reversegeocodeCoordinate = this.reversegeocodeCoordinate.bind(this);
     }
+    // handleInputChange = (event) => {
+    //     const pincode = event.target.value;
+    //     this.setState(prevState => {
+    //         const filterData = prevState.data.filter(element => {
+    //             return element.name.toLowerCase().includes(pincode.toLowerCase());
+    //         });
+    //         return {
+    //             pincode,
+    //             filterData
+    //         };
+    //     });
+    // };
+    // handleFormSubmit = () => {
+    //     const { pincode } = this.state;
+    //     localStorage.setItem('pincode', pincode);
+    //     // localStorage.setItem('user', rememberMe ? user : '');
+    // };
     getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(this.getCoordinate, this.handleLocationError);
@@ -36,10 +57,13 @@ class HomePage extends Component {
             .then(response => response.json())
             .then(data =>
                 this.setState({
-                    userAddress: data.results[0].formatted_address
+                    userAddress: data.results[0].formatted_address,
 
-                    // address_components[5].long_name
-                })
+                    pincode: data.results[0].address_components[5].long_name,
+
+                }, function () { localStorage.setItem("pincode", `${data.results[0].address_components[5].long_name}`) }
+
+                )
             )
             .catch(error => alert(error));
     }
@@ -62,7 +86,10 @@ class HomePage extends Component {
         }
 
     }
+
     render() {
+        const pin = this.state.pincode;
+        console.log('pin' + pin);
 
         return (
             <div>
@@ -71,7 +98,6 @@ class HomePage extends Component {
                     <Navbar bg="dark" variant="dark">
                         <div className="col-md-12 col-sm-12 col-xs-12">
                             <div className="col-md-4 col-sm-4 col-xs-12">
-
                             </div>
                             <ul className="stick_menu">
                                 <li><i className="fa mail_icon" aria-hidden="true"><img src="images/phone_icon.png" alt="" />
@@ -84,7 +110,6 @@ class HomePage extends Component {
                                     href="mailto:info@direct2lab.com">info@direct2lab.com</a></li>
                             </ul>
                         </div>
-
                     </Navbar>
                 </div>
                 <div className="bg_bennar">
@@ -93,14 +118,28 @@ class HomePage extends Component {
                             <div className="col-md-12 col-sm-12 col-xs-12">
                                 <div className="heading_h1">
                                     <h1>Please Provide your loaction to search shop , Produts near You</h1>
-
                                 </div>
                                 <div className="col-md-3 formgroup">
-                                    <Form.Group className="formgroup">
-                                        <Form.Control type="text" placeholder="Enter your Pincode here" />
+                                    <Form.Group className="formgroup"
+                                    // onSubmit={this.handleFormSubmit}
+                                    >
+                                        <Form.Control
+                                            type="text"
+                                            value={this.state.pincode}
+                                            // onChange={this.handleChange}
+                                            placeholder="Enter your Pincode here" />
+                                        <Button
+                                            variant="success"
+                                            className="successButton"
+                                            onClick={() => this.props.history.push('/StoreListing')}
+                                        >Enter
+                                        </Button>
                                     </Form.Group>
                                     <p>or</p>
-                                    <Button className="Icon" onClick={this.getLocation} variant="danger"> Fetch current location
+                                    <Button
+                                        className="Icon"
+                                        onClick={this.getLocation}
+                                        variant="danger"> Fetch current location
                                       <i class="fas fa-location"></i></Button>
                                     {/* <p>latitude : {this.state.latitude}</p>
                                     <p> longitude:{this.state.longitude}</p> */}
