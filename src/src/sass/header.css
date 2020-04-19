@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: #17232e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  position: -webkit-sticky;
+}
+
+ul.stick_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  float: right;
+}
+
+ul.stick_menu li {
+  float: left;
+  font-size: 10px;
+  color: #16c4b6;
+  padding: 8px 0 8px 30px;
+}
+
+ul.stick_menu li a {
+  color: #fff;
+}
+
+ul.stick_menu li i {
+  margin-right: 15px;
+}
+
+ul.stick_menu li .phone_icon {
+  background: #263543;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+ul.stick_menu li .phone_icon svg {
+  transform: rotate(100deg);
+}
+
+ul.stick_menu li .mail_icon {
+  background: #263543;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.middle_header {
+  background: #151f29;
+}
+
+.logo {
+  padding: 25px 0 15px;
+}
+.stickMenu{
+  margin-right: 20px;
+}
+.btn_download {
+  background: none;
+  border: solid 2px #16c4b6;
+  /* margin-top: 25px; */
+  font-size: 14px;
+  color: #16c4b6;
+}
+.btn_download:hover, .btn_download:focus {
+  background-color: #16c4b6;
+  color: #fff;
+  border: solid 2px #16c4b6;
+}
+
+ul.middle_right_section {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+ul.middle_right_section > li {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
+ul.middle_right_section > li a {
+  font-size: 14px;
+  color: #16c4b6;
+  font-weight: normal;
+}
+
+ul.middle_right_section > li a:hover {
+  background: none;
+  border: solid 2px #16c4b6;
+}
+
+ul.middle_right_section > li. {
+  background: #1e2b38;
+  padding: 20px 0 23px;
+}
+
+ul.middle_right_section > li .login {
+  float: left;
+  padding: 0 15px 0 30px;
+  font-size: 50px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+ul.middle_right_section > li .login a:hover {
+  border: none;
+}
+
+ul.middle_right_section > li .login a {
+  color: #c2cdd7;
+  font-size: 14px;
+}
+
+.login_email {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.login .icon {
+  font-size: 26px;
+  color: #a5a5a5;
+  padding-top: 23px;
+  padding-right: 15px;
+}
+
+.userAlign {
+  padding-top: 35px;
+}
+
+.userAlign a {
+  display: block;
+}
+
+.login_email strong {
+  color: #16c4b6;
+  font-size: 14px;
+  display: block;
+  line-height: 14px;
+}
+
+.navbar_menu {
+  border-radius: 0;
+  border: none;
+  margin: 0;
+}
+
+ul.header_menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c2cdd7 !important;
+  padding: 30px;
+}
+
+ul.header_menu li.active a {
+  border-bottom: solid 2px #16c4b6;
+  color: #16c4b6 !important;
+  background: #17232e !important;
+}
+
+ul.header_menu li a:hover {
+  border-bottom: solid 2px #16c4b6;
+  color: #16c4b6 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #16c4b6;
+  border-bottom: 3px solid #16c4b6;;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #16c4b6;
+}
+
+.login_email .dropdown-menu {
+  background-color: #1e2b38;
+  padding: 10px 20px;
+  margin-top: 14px !important;
+}
+
+.search_bar > div.custom-input-btn + div {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 23px;
+    padding-left: 27px;
+  }
+
+  .navbar-expand-lg .navbar-nav .active .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

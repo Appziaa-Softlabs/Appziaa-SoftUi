@@ -1,0 +1,105 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: red($color: #000000);
+  }
+  
+.inputgroup{
+width: 10%;
+align-items: center;
+flex-direction: column;
+display: flex;
+justify-content: center;
+margin-right: 500px;
+}  
+.Icon{
+  font-size: large;
+}
+body {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.middle_header {
+  background: #151f29;
+}
+
+
+
+
+
+
+.search_bar > div.custom-input-btn + div {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 23px;
+    padding-left: 27px;
+  }
+
+  .navbar-expand-lg .navbar-nav .active .nav-link {
+    padding-right: 33px;
+    padding-left: 35px;
+  }
+}
+
+
+.heading_h1 h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 130px 0 0;
+  color: black;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+
+.tranprent_bg ul.lab_menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  display: block;
+}
+
+.tranprent_bg ul.lab_menu li a.active {
+  border-bottom: solid 1px #16c4b6;
+}
+
+
+
+
+/*Recommended Lab packages */
+
+.padding-bottom-200 {
+  padding-bottom: 220px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+.formgroup{
+  justify-content: center;
+ 
+}
+.successButton{
+width: 100px;
+
+}
+.addres_p{
+  text-align: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+}
+

@@ -1,0 +1,334 @@
+.bg_bennar {
+  background: url(../images/bg_bennar.png) no-repeat 0 0;
+  width: 100%;
+  padding-bottom: 60px;
+  background-size: 100% 100%;
+}
+
+.marginLR5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.call-back-btn {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+
+.justify-content-md-center .col-lg-7 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.heading_h1 h1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 0;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.heading_h1 p {
+  padding: 0 0 40px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+.tranprent_bg {
+  background-color: rgba(0, 0, 0, 0.3);
+  clear: both;
+  margin-bottom: 22px;
+}
+
+.tranprent_bg ul.lab_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.tranprent_bg ul.lab_menu li {
+  display: inline-block;
+}
+
+.tranprent_bg ul.lab_menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  display: block;
+}
+
+.tranprent_bg ul.lab_menu li a.active {
+  border-bottom: solid 1px #16c4b6;
+}
+
+/*Deals section*/
+
+.headine {
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 50px 0 10px;
+}
+
+.day_time {
+  clear: both;
+  display: block;
+  padding-bottom: 30px;
+}
+
+.day_time ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.day_time ul li {
+  background: #fff;
+  color: #000;
+  font-size: 22.5px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+
+.day_time ul li.bg_none {
+  background: none;
+  color: #fff;
+}
+
+.deals_pennal {
+  background: #16c4b6;
+  position: relative;
+}
+
+.deals_slid {
+  clear: both;
+  display: block;
+  margin: 0;
+  height: 515px;
+}
+
+.view_btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 40px;
+}
+
+.view_btn:hover {
+  color: #fff;
+}
+
+.slid_btn_bottom {
+  margin: 40px 0 50px;
+}
+
+.slid_btn_bottom a {
+  border: solid 2px #fff;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 40px;
+}
+
+.slid_btn_bottom a:hover {
+  border: solid 2px #fff;
+  background: none;
+  color: #fff
+}
+
+/*Deals section*/
+
+/*Recommended Lab packages */
+
+.package_pennal {
+  background: #f6f6f6;
+  position: relative;
+}
+
+.headine2 {
+  font-size: 24px;
+  margin: 0;
+  color: #212121;
+  padding: 50px 0 10px;
+  font-weight: bold;
+}
+
+.headine2 span {
+  font-weight: normal;
+  color: #7c7c7c;
+}
+
+.border_bottom {
+  border-bottom: 3px solid #ff3a64;
+  width: 150px;
+  margin: auto auto 50px;
+}
+
+.slid_btn_bottom1 {
+  margin: 40px 0 50px;
+}
+
+body .slid_btn_bottom1 a {
+  border: solid 2px #16c4b6;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #16c4b6 ;
+  padding: 10px 40px;
+}
+
+body .slid_btn_bottom1 a:hover  {
+  border: solid 2px #16c4b6;
+  background: #16c4b6;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff ;
+  padding: 10px 40px;
+}
+
+/*Recommended Lab packages */
+
+/*Our story*/
+
+.our_story {
+  font-size: 16px;
+  color: #888;
+  font-weight: normal;
+  padding: 20px 0 0;
+  text-transform: uppercase;
+}
+
+.we_about {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #23b5b9;
+}
+
+.we_about span {
+  color: #888;
+}
+
+.handle {
+  color: #505050;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.handle i {
+  color: #f15c58;
+  font-weight: bold;
+}
+
+.paragraph-content {
+  font-size: 14px;
+  color: #7c7c7c;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.paragraph-content-title {
+  font-size: 18px;
+  color: #7c7c7c;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.view_service {
+  margin: 20px 0 80px
+}
+
+.view_service a {
+  background: #ff3a64;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 50px
+}
+
+.view_service a:hover {
+  padding: 15px 50px;
+}
+
+.blue_pennal {
+  background: #23b5b9;
+  padding-bottom: 90px;
+}
+
+.patients {
+  margin: 0;
+  padding: 60px 0 10px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
+}
+
+.patients span {
+  font-weight: bold;
+}
+
+.ornare {
+  font-size: 16px;
+  padding: 5px 0 50px;
+  margin: 0;
+  color: #fff;
+}
+
+.headine6 {
+  font-size: 24px;
+  margin: 0;
+  color: #23b5b9;
+  padding: 50px 0 10px;
+  font-weight: bold;
+}
+
+.headine6 span {
+  color: #505050;
+}
+
+.envents_pragh {
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+/*Our story*/
+.deals_slid ul .slick-dots {
+  display: none !important;
+}
+
+.news_btn {
+  clear: both;
+  padding: 30px 0 90px;
+}
+
+.news_btn .buy_btn {
+  float: none;
+}
+
+.padding-bottom-200 {
+  padding-bottom: 220px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}

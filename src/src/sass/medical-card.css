@@ -1,0 +1,29 @@
+.menu ul {
+  background: #ddd;
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
+
+.menu ul li {
+  display: inline-block;
+  float: left;
+  width: calc(100%/3);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.all-border {
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  border-top: 0;
+}

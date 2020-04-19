@@ -1,0 +1,135 @@
+.deals_card {
+    padding: 20px 20px 80px 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    min-height: 490px;
+}
+.deals_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid #30cabe;
+}
+
+.slick-initialized .slick-slide {
+    /*padding: 5px;*/
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 33px !important;
+}
+
+.deals_h3 {
+    color: #212121;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 20px 0 0;
+    line-height: 24px;
+}
+
+.deals_price {
+    text-align: center;
+    margin: 8px 0 24px;
+}
+
+.deals_price a {
+    background: none;
+    color: #16c4b6;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid 1px #30cabe;
+}
+
+.deals_price a:hover {
+    /* box-shadow: 0 0 5px 0 #16c4b6; */
+  cursor: default;
+}
+
+.slick-slide img {
+    max-width: 100%;
+}
+
+.deals_slid ul li .deals_unorder_list {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.deals_slid ul li .deals_unorder_list p {
+    list-style: none;
+    margin: 0;
+    line-height: 25px;
+    padding: 0 15px 5px;
+}
+
+.deals_unorder_list {
+    padding: 0 10px;
+}
+
+.bg_color {
+    background: #17232e;
+    overflow: hidden;
+    padding: 8px 0;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+
+.buy_btn {
+    color: #fff;
+    font-size: 14px;
+    background: #ff3a64;
+    padding: 10px 35px;
+    border-color: #ff3a64;
+    border: none;
+    float: right;
+    margin-right: 10px;
+    text-shadow: none;
+
+}
+
+.featured_box .buy_btn {
+    padding: 14px;
+    width: 56%;
+}
+
+.deals_card:hover .bg_color {
+    display: block;
+}
+
+.carousel-inner {
+    overflow: unset !important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 59px;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+}
+
+.slick-prev {
+    left: -65px;
+}
+
+.parameterList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.parameterList li {
+    width: 100% !important;
+    float: none!important;
+    padding-bottom: 4px;
+}

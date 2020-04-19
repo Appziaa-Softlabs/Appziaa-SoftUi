@@ -1,0 +1,100 @@
+.search_btn {
+  text-transform: uppercase;
+  height: 49px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 176px;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-weight: 500;
+  background: #ff075f;
+}
+
+.search_btn:hover {
+  background: #ff075f;
+  border-color: #ff075f;
+  color: #fff;
+}
+
+.search_bar {
+  padding: 25px;
+  clear: both
+}
+
+.search_bar input {
+  height: 49px;
+  border-radius: 0;
+  outline: none;
+  padding-left: 40px;
+  border: none;
+}
+
+.custom-input-btn, .dropdown-toggle {
+  border-radius: .25rem;
+  background-color: #f1f1f1;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #22282c;
+  height: 100%;
+  border-right: 1px solid #acb0b4;
+}
+
+
+.dropdown-menu.show {
+  margin: -1px 0 0;
+}
+
+.custom-input-btn li {
+  background-color: #fff;
+  padding: 5px 20px;
+  margin: 0
+}
+
+.custom-input-btn li a {
+  color: #22282c;
+  text-decoration: none;
+}
+
+.custom-input-btn li a:hover {
+  color: #16c4b6;
+  text-decoration: none;
+}
+
+.custom-input-btn li:nth-child(even) {
+  background-color: #16c4b6;
+  color: #fff;
+}
+
+.custom-input-btn li:nth-child(even) a:hover {
+  color: #fff;
+}
+
+.custom-input-btn svg {
+  color: #3b434e;
+  font-size: 20px;
+  margin-bottom: -2px;
+}
+
+.margin-left-10 {
+  margin-left: 15px;
+}
+
+.margin-right-10 {
+  margin-right: 15px;
+}
+
+.custom-input-btn .btn-default {
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
